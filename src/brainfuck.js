@@ -66,6 +66,8 @@ function brainfuck(_memory) {
     }
 
     this.run = function (_callback) {
+        
+        this._state = 'running';
 
         if (this._stop) {
             this._state = 'stopped';
