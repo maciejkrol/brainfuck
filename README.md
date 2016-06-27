@@ -7,6 +7,16 @@ For more information about the language itself go to the [article](https://en.wi
 
 This library let's you run any brainfuck programs.
 
+## Installation
+
+[![npm](https://img.shields.io/npm/v/brainfuck-js.svg?maxAge=2592000)](https://www.npmjs.com/package/brainfuck-js)
+
+You can install the library using npm.
+
+```
+npm install brainfuck-js
+```
+
 ## Basic usage
 
 Create a brain fuck object and initialize it with the memory object of your choice. 
