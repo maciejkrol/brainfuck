@@ -1,5 +1,5 @@
 {
-  "name": "brainfuck",
+  "name": "brainfuck-js",
   "version": "1.0.0",
   "description": "A brainfuck language interpreter for Node.js.",
   "main": "./src/brainfuck.js",
