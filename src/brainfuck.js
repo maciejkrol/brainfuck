@@ -4,7 +4,7 @@ function brainfuck(_memory) {
     this.memory = _memory;
     this.code = new Code();
     this._stop = false;
-    this._state = 'stopped';
+    this._isRunning = false;
 
     this._onOutput = function (_o) {
         process.stdout.write(String.fromCharCode(_o));
@@ -23,8 +23,8 @@ function brainfuck(_memory) {
         this._stop = true;
     }
 
-    this.state = function () {
-        return this._state;
+    this.isRunning = function () {
+        return this._isRunning;
     }
 
     this.reset = function () {
@@ -67,10 +67,10 @@ function brainfuck(_memory) {
 
     this.run = function (_callback) {
         
-        this._state = 'running';
+        this._isRunning = true;
 
         if (this._stop) {
-            this._state = 'stopped';
+            this._isRunning = false;
             this._run(_callback);
         } else {
             this._stop = this._stop || !this.step();

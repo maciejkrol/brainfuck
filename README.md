@@ -43,7 +43,7 @@ brainfuck.run(function () { /* implementation */ });
 You can check the status of the execution and abort it at any time.
 
 ```javascript
-var state = brainfuck.state(); //"running" or "stopped"
+var state = brainfuck.isRunning();
 
 brainfuck.stop();
 ```
